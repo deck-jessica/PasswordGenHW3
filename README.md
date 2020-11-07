@@ -10,7 +10,7 @@ This web applicaton is also styled to be responsive to given screen size. This p
 
 This project can be viewed and used using any web browser from the link provided.
 
-[Password Generator](https://deck-jessica.github.io/Portfolio2020JMD/)
+[Password Generator](https://deck-jessica.github.io/PasswordGenHW3/)
 
 ## Usage 
 
