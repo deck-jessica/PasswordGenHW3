@@ -1,93 +1,56 @@
 # 03 JavaScript: Password Generator
 
-## Your Task
+## Password Generator website
 
-This week’s homework requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+This project was undertaken to modify given CSS and HTML source code, and add to it the dynamic functionality of Javascript to produce a random password based on given criteria. Based on a series of prompts that appear when an eventListener alerts the source code to run the writePassword function on clicking, the Javascript will run the additional functions to select from special characters, numbers and upper and lower case letters from the user's input. Certain conditions must be met to get the function to run, including a numerical input between 8 and 128 for the length and at least one type of character must be chosen. 
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+This web applicaton is also styled to be responsive to given screen size. This provides accessibility from mobile devices.
 
-## User Story
+## Installation
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+This project can be viewed and used using any web browser from the link provided.
 
-## Acceptance Criteria
+[Password Generator](https://deck-jessica.github.io/PasswordGenHW3/)
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+## Usage 
 
-## Mock-Up
+This page can be accessed and used to randomly populate a password. To generate a random password, you will first click the "Generate Password" button to start the prompts. First, you must select a number between 8 and 128, which is parsed to an integer. The first validation occurs here, where the number must be between the given values. Once a proper number has been entered, the prompts will take you through whether you want to include special characters, numbers, lower and upper case letters. The next validation occurs here, where you must select at least one type of special character. Both validations to this point will return an undefined password if there are no proper length or characters selected. 
 
-The following image shows the web application's appearance and functionality:
+Once the length and characters are confirmed, the characters undergo further validation given the length of the password selected, to populate into possible values for the getRandom function. Once the chosen characters have been run through the getRandom function and been sorted into the array, the writePassword function will fire and print the password to the passwordText field, and shown on the screen.
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+![Password Generator](PassGenScreenshot.png)
 
-## Grading Requirements
+## Credits
 
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+I used my Bootcamp course materials, and some minor help from my classmates and LAs. I also relied on some Youtube videos for ideas on how to set up the random functions, special thanks to Traversy Media for that.
 
 
-## Review
 
-You are required to submit the following for review:
+## License
 
-* The URL of the deployed application.
+MIT License
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+Copyright (c) [2020] [Jessica Deck]
 
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---
+
+
